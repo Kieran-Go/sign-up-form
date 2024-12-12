@@ -1,1 +1,1 @@
-# sign-up-form
+A basic sign-up form. The purpose of this project is to practice creating and styling html forms.
