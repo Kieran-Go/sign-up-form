@@ -8,7 +8,6 @@
     <title>Sign-up Form</title>
 </head>
 <body>
-
     <div id="page-margin">
         <img id="bg-img" src="images/leaf_bg.avif" alt="Close up of a green leaf plant">
         <div id="logo-container">
@@ -24,9 +23,55 @@
     </div>
 
     <div id="content-container">
-        <h1>Hello World</h1>
+        <div id="head-container">
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> 
+                to get started.
+            </h2>
+            <h2>You <em>know</em> you want to.</h2>
+        </div>
+
+        <div id="form-container">
+            <div id="form-header">
+                <h2>Let's do this!</h2>
+            </div>
+
+            <form id="sign-up-form" action="" method="post">
+                <section>
+                    <div class="form-text">
+                        <label for="fname">FIRST NAME</label>
+                        <input type="text" id="fname" required>
+                    </div>
+                    <div class="form-text">
+                        <label for="lname">LAST NAME</label>
+                        <input type="text" id="lname" required>
+                    </div>
+                </section>
+                <section>
+                    <div class="form-text">
+                        <label for="email">EMAIL</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-text">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                </section>
+                <section>
+                    <div class="form-text">
+                        <label for="pword">PASSWORD</label>
+                        <input type="password" id="pword" required>
+                    </div>
+                    <div class="form-text">
+                        <label for="confirmed-pword">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirmed-pword" required>
+                    </div>
+                </section>
+            </form>
+        </div>
+        <div id="form-footer">
+            <button type="submit" form="sign-up-form">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </div>
     </div>
-    
-    
 </body>
 </html>

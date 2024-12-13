@@ -10,10 +10,12 @@
 /* Declare variables */
 :root{
     --page-margin: 40%;
+    --content-offset: 3em;
 }
 
 body{
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(247, 247, 247);
+    font-family: sans-serif;
 }
 
 #bg-img{
@@ -60,5 +62,46 @@ a{
 #content-container{
     margin-left: var(--page-margin);
     display: flex;
+    flex-direction: column;
     justify-content: center;
+}
+
+#head-container{
+    width: 80%;
+    margin-top: 8em;
+    margin-bottom: 3em;
+    margin-left: var(--content-offset);
+}
+
+#form-container{
+    width: 100%;
+    padding-bottom: 50px;
+    background-color: white;
+    box-shadow: 0 3px 3px rgb(0, 0, 0, 0.5);
+}
+
+#form-header, form{
+    margin-left: var(--content-offset);
+}
+
+section{
+    display: flex;
+    gap: 90px;
+    margin-top: 30px;
+}
+
+.form-text{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+}
+
+#form-footer{
+    margin-left: var(--content-offset);
+    margin-top: 2rem;
+}
+#form-footer a{
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
 }
