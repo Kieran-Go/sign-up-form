@@ -6,3 +6,59 @@
     font-weight: normal;
     font-style: normal;
 }
+
+/* Declare variables */
+:root{
+    --page-margin: 40%;
+}
+
+body{
+    background-color: rgb(204, 204, 204);
+}
+
+#bg-img{
+    position: absolute;
+    width: var(--page-margin);
+    height: 100%;
+}
+
+#logo-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    background-color: #00000075;
+    width: var(--page-margin);
+    height: 10em;
+}
+
+#logo{
+    width: 15%;
+    height: auto;
+}
+
+#logo-text{
+    font-family: 'norsebold', sans-serif;
+    color: white;
+    font-size: 8em;
+}
+
+#margin-footer{
+    position: absolute;
+    color: white;
+    bottom: 0;
+    width: var(--page-margin);
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    color: white;
+}
+
+#content-container{
+    margin-left: var(--page-margin);
+    display: flex;
+    justify-content: center;
+}
